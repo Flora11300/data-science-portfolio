@@ -1,0 +1,2 @@
+# Include the portfolio Python source in GitHub language statistics.
+*.py linguist-language=Python linguist-detectable=true linguist-vendored=false linguist-generated=false linguist-documentation=false
