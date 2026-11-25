@@ -4,7 +4,7 @@
 
 A LINE bot for recording expenses and understanding monthly spending. This version recreates the recording and analysis workflow of a previous group project using **Python, Flask, LIFF, and SQLite**. It includes a mobile-friendly form, user-scoped records, category summaries, and an isolated local demonstration mode.
 
-**記帳介面主標題：資源有限，慾望無窮。**
+![Spending — 資源有限，慾望無窮；本機示範與虛構交易](../../spending-preview-updated.png)
 
 *The interface can be tried locally with fictional transactions; live LINE deployment requires channel setup.*
 
