@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Spending · 每一筆都算數</title><link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}"></head>
+<body>
+<div class="shell">
+<header><a class="brand" href="/" aria-label="Spending 首頁"><span class="brand-icon">S</span> spending<span class="brand-dot">.</span></a><span class="mode">{% if demo %}LOCAL DEMO · 虛構資料{% else %}LINE 記帳助手{% endif %}</span></header>
+<main>
+<section class="intro"><span class="eyebrow">A LITTLE CLARITY, EVERY DAY</span><h1>生活有花費，<br>也有<span>好好記下的餘裕。</span></h1><p>記下一筆，讓每個月的生活輪廓更清楚。</p></section>
+<div class="workspace">
+<section class="card entry"><div class="section-head"><div><span class="eyebrow">01 / RECORD</span><h2>新增一筆支出</h2></div><span class="round-icon">＋</span></div>
+<form id="expense-form"><label for="amount">花了多少？</label><div class="amount-input"><span>NT$</span><input id="amount" name="amount" inputmode="decimal" type="text" pattern="[0-9]+([.][0-9]{1,2})?" placeholder="0.00" required autocomplete="off" aria-label="支出金額"></div>
+<div class="fields"><label>支出類別<select id="category" name="category">{% for key,label in categories.items() %}<option value="{{key}}">{{label}}</option>{% endfor %}</select></label><label>日期<input id="date" name="date" type="date" value="{{today}}" required></label></div>
+<label>備註 <span class="optional">選填</span><input id="note" name="note" maxlength="200" placeholder="例如：和朋友吃午餐"></label>
+<button id="submit" class="primary" disabled type="submit">記下這筆支出 <span>↗</span></button>
+<p id="status" role="status" aria-live="polite">正在準備記帳環境…</p></form>
+<div class="entry-foot"><span class="small-dot"></span>每一筆小事，都值得好好整理。</div></section>
+<section class="right-column"><div class="card overview"><div class="section-head"><div><span class="eyebrow">02 / OVERVIEW</span><h2>這個月的生活</h2></div><span id="month-label" class="month"></span></div><div class="total"><span>本月總支出</span><strong id="total">NT$ 0.00</strong><small id="count">0 筆記錄</small></div><div class="divider"></div><div id="categories" class="category-list"><p class="empty">本月尚無支出，從第一筆開始。</p></div></div>
+<div class="card records"><div class="section-head"><div><span class="eyebrow">03 / RECENT</span><h2>最近的記錄</h2></div><button id="refresh" class="text-button" type="button">重新整理 ↻</button></div><ul id="records"><li class="empty">尚無記錄</li></ul></div></section>
+</div>
+{% if demo %}<aside class="demo-note"><strong>本機展示模式</strong> 使用虛構交易，不連接 LINE 帳號。<button id="seed" class="text-button" type="button">載入示範資料 ↗</button></aside>{% endif %}
+</main><footer><span>SPENDING / SMALL STEPS, CLEARER DAYS.</span><span>復刻以前小組專案</span></footer>
+</div><script id="app-config" type="application/json">{{ {'demo':demo,'liffId':liff_id,'categories':categories}|tojson }}</script>
+{% if not demo %}<script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>{% endif %}
+<script src="{{ url_for('static',filename='app.js') }}" defer></script>
+</body></html>
