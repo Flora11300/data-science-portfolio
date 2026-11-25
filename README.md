@@ -20,7 +20,7 @@ A Python recreation of a previous group project (復刻以前小組專案), feat
 
 [Read the project →](projects/spending-line-bot/README.md)
 
-**記帳介面主標題：資源有限，慾望無窮。**
+![Spending — 資源有限，慾望無窮；本機示範與虛構交易](spending-preview-updated.png)
 
 ### Road Maintenance Analysis
 
