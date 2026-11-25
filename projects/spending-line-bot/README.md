@@ -1,12 +1,12 @@
-# Spending — Python LINE Expense Bot
+# Spending — 資源有限，慾望無窮
 
 **復刻以前小組專案 · A Python recreation of a previous group project**
 
 A LINE bot for recording expenses and understanding monthly spending. This version recreates the recording and analysis workflow of a previous group project using **Python, Flask, LIFF, and SQLite**. It includes a mobile-friendly form, user-scoped records, category summaries, and an isolated local demonstration mode.
 
-![Local demo with fictional transactions](assets/demo.jpg)
+**記帳介面主標題：資源有限，慾望無窮。**
 
-*Local demonstration using fictional transactions. This is the LIFF-style web interface, not proof of a deployed LINE channel.*
+*The interface can be tried locally with fictional transactions; live LINE deployment requires channel setup.*
 
 ## Features
 
