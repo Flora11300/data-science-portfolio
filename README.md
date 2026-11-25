@@ -10,17 +10,17 @@ I am proficient in **Python**, with experience analyzing financial statements an
 
 | Project | Focus | Tools |
 | --- | --- | --- |
-| [Spending — LINE Expense Bot](projects/spending-line-bot/README.md) | Python recreation of a previous group project: expense recording, monthly summaries, and tested LINE integration | Python, Flask, LIFF, SQLite |
+| [Spending — 資源有限，慾望無窮](projects/spending-line-bot/README.md) | Python recreation of a previous group project: expense recording, monthly summaries, and tested LINE integration | Python, Flask, LIFF, SQLite |
 | [Road Maintenance Analysis](projects/road-maintenance/README.md) | Explore 999,999 pavement records, fit a logistic regression, and develop a maintenance priority score | R, tidyverse, ggplot2 |
 | [Student Performance Classification](projects/student-performance/README.md) | Compare three classifiers, inspect class-level errors, and review evaluation limitations | Orange, Excel |
 
-### Spending — Expense Bot
+### Spending — 資源有限，慾望無窮
 
 A Python recreation of a previous group project (復刻以前小組專案), featuring expense recording, category summaries, a mobile LIFF-style form, and an isolated local demo. Includes source code and automated tests; live LINE deployment requires channel setup.
 
 [Read the project →](projects/spending-line-bot/README.md)
 
-![Spending local demo with fictional transactions](projects/spending-line-bot/assets/demo.jpg)
+**記帳介面主標題：資源有限，慾望無窮。**
 
 ### Road Maintenance Analysis
 
