@@ -14,7 +14,7 @@ I am proficient in **Python**, with experience analyzing financial statements an
 | [Road Maintenance Analysis](projects/road-maintenance/README.md) | Explore 999,999 pavement records, fit a logistic regression, and develop a maintenance priority score | R, tidyverse, ggplot2 |
 | [Student Performance Classification](projects/student-performance/README.md) | Compare three classifiers, inspect class-level errors, and review evaluation limitations | Orange, Excel |
 
-### Spending — LINE Expense Bot
+### Spending — Expense Bot
 
 A Python recreation of a previous group project (復刻以前小組專案), featuring expense recording, category summaries, a mobile LIFF-style form, and an isolated local demo. Includes source code and automated tests; live LINE deployment requires channel setup.
 
